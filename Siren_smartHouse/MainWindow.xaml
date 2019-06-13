@@ -1,0 +1,81 @@
+﻿<Window x:Class="Siren_smartHouse.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Siren_smartHouse"
+        mc:Ignorable="d"
+        Title="(C) SIREN SMARTHOUSE SOLUTIONS LTD." Height="550" Width="1200">
+    <Grid x:Name="mainWin" Margin="0,0,0.333,-5.333" RenderTransformOrigin="0.5,0.5" Background="#FFFCFAFA">
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform ScaleY="1" ScaleX="1"/>
+                <SkewTransform AngleY="0" AngleX="0"/>
+                <RotateTransform Angle="0"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <Label x:Name="lbl_oh" Content="VALAISTUS: OLOHUONE" FontSize="20" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Height="60" Width="260" FontWeight="Bold"/>
+        <Label x:Name="lbl_keit" Content="VALAISTUS: KEITTIÖ" FontSize="20" HorizontalAlignment="Left" Margin="320,20,0,0" VerticalAlignment="Top" Height="60" Width="260" FontWeight="Bold"/>
+        <Label x:Name="lbl_sauna" Content="SAUNAN OHJAUS" FontSize="20" HorizontalAlignment="Left" Margin="640,20,0,0" VerticalAlignment="Top" Height="60" Width="260" FontWeight="Bold"/>
+        <Label x:Name="lbl_lämmitys" Content="KESKUSLÄMMITYS" FontSize="20" HorizontalAlignment="Left" Margin="905,20,0,0" VerticalAlignment="Top" Width="235" Height="60" FontWeight="Bold"/>
+        <Button x:Name="btn_settarget" Content="ASETA" FontSize="20" HorizontalAlignment="Left" Margin="1040,200,0,0" VerticalAlignment="Top" Width="100" Height="55" Click="Btn_settarget_Click" Background="#FFF3E610">
+            <Button.Effect>
+                <DropShadowEffect BlurRadius="4" Opacity="0.7" ShadowDepth="7"/>
+            </Button.Effect>
+        </Button>
+        <Label x:Name="lbl_temp" Content="HUONEISTON LÄMPÖTILA" FontSize="16" HorizontalAlignment="Left" Margin="905,75,0,0" VerticalAlignment="Top" Height="30" Width="215" FontWeight="Bold"/>
+        <TextBox x:Name="txtTarget" HorizontalAlignment="Left" Height="55" Margin="910,200,0,0" FontSize="22" TextWrapping="Wrap" VerticalAlignment="Top" Width="125" Background="#FFF2D976"/>
+        <Label x:Name="lbl_targettemp" Content="HUONEISTON TAVOITELÄMPÖTILA" FontSize="16" HorizontalAlignment="Left" Margin="895,170,0,0" VerticalAlignment="Top" Height="30" Width="280" FontWeight="Bold"/>
+        <Button x:Name="btn_ohkirkas" Content="KIRKAS" FontSize="20" HorizontalAlignment="Left" Margin="20,180,0,0" VerticalAlignment="Top" Width="260" Height="60" Click="btn_ohkirkas_Click" Background="#FFADFA64">
+            <Button.Effect>
+                <DropShadowEffect Opacity="0.7" BlurRadius="4" ShadowDepth="7"/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="btn_ohpuoliv" Content="PUOLIVALO" FontSize="20" HorizontalAlignment="Left" Margin="20,260,0,0" VerticalAlignment="Top" Width="260" Height="60" Click="btn_ohpuoliv_Click" Background="#FFADFA64">
+            <Button.Effect>
+                <DropShadowEffect BlurRadius="4" Opacity="0.7" ShadowDepth="7"/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="btn_ohhamara" Content="HÄMÄRÄ" FontSize="20" HorizontalAlignment="Left" Margin="20,340,0,0" VerticalAlignment="Top" Width="260" Height="60" Click="btn_ohhamara_Click" Background="#FFADFA64">
+            <Button.Effect>
+                <DropShadowEffect BlurRadius="4" Opacity="0.7" ShadowDepth="7"/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="btn_ohpois" Content="POIS" FontSize="20" HorizontalAlignment="Left" Margin="20,420,0,0" VerticalAlignment="Top" Width="260" Height="60" Click="btn_ohpois_Click" Background="#FFADFA64">
+            <Button.Effect>
+                <DropShadowEffect BlurRadius="4" Opacity="0.7" ShadowDepth="7"/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="btn_keitkirkas" Content="KIRKAS" FontSize="20" HorizontalAlignment="Left" Margin="320,180,0,0" VerticalAlignment="Top" Width="260" Height="60" Click="btn_keitkirkas_Click" Background="#FF4BC3DF">
+            <Button.Effect>
+                <DropShadowEffect BlurRadius="4" Opacity="0.7" ShadowDepth="7"/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="btn_keitpuoliv" Content="PUOLIVALO" FontSize="20" HorizontalAlignment="Left" Margin="320,260,0,0" VerticalAlignment="Top" Width="260" Height="60" Click="btn_keitpuoliv_Click" Background="#FF4BC3DF">
+            <Button.Effect>
+                <DropShadowEffect BlurRadius="4" Opacity="0.7" ShadowDepth="7"/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="btn_keithamara" Content="HÄMÄRÄ" FontSize="20" HorizontalAlignment="Left" Margin="320,340,0,0" VerticalAlignment="Top" Width="260" Height="60" Click="btn_keithamara_Click" Background="#FF4BC3DF">
+            <Button.Effect>
+                <DropShadowEffect BlurRadius="4" Opacity="0.7" ShadowDepth="7"/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="btn_keitpois" Content="POIS" FontSize="20" HorizontalAlignment="Left" Margin="320,420,0,0" VerticalAlignment="Top" Width="260" Height="60" Click="btn_keitpois_Click" Background="#FF4BC3DF">
+            <Button.Effect>
+                <DropShadowEffect BlurRadius="4" Opacity="0.7" ShadowDepth="7"/>
+            </Button.Effect>
+        </Button>
+        <TextBox x:Name="txtHeat" HorizontalAlignment="Left" Height="60" Margin="905,105,0,0" TextWrapping="Wrap" FontSize="22" VerticalAlignment="Top" Width="200" Background="#FFF2D976" SelectionBrush="#FFEDE6C4"/>
+        <TextBox x:Name="txtOh" HorizontalAlignment="Left" Height="75" Margin="25,85,0,0" TextWrapping="Wrap" FontSize="22" VerticalAlignment="Top" Width="255" Background="#FFDAFAA9" SelectionBrush="#FFDDE1D9"/>
+        <TextBox x:Name="txtKeit" HorizontalAlignment="Left" Height="75" Margin="320,85,0,0" TextWrapping="Wrap" FontSize="22" VerticalAlignment="Top" Width="260" Background="#FFC6EBF3" SelectionBrush="#FFB9C7D6"/>
+        <TextBox x:Name="txtSauna" HorizontalAlignment="Left" Height="75" Margin="620,85,0,0" TextWrapping="Wrap" FontSize="22" VerticalAlignment="Top" Width="250" SelectionBrush="#FFF1ADEB" Background="#FFF1ACAC" RenderTransformOrigin="0.477,2.248"/>
+        <Image HorizontalAlignment="Left" Height="130" Margin="760,375,0,0" VerticalAlignment="Top" Width="245" RenderTransformOrigin="1,0.536"/>
+        <Image Margin="943,340,32.267,26.133" Source="smarthomesolutions.PathByTim.png" Stretch="Fill" RenderTransformOrigin="0.682,0.519"/>
+        <Label x:Name="lblLampotila" Content="Label" HorizontalAlignment="Left" Margin="635,260,0,0" VerticalAlignment="Top" Height="60" Width="250" FontSize="24" RenderTransformOrigin="-0.034,0.61"/>
+        <Button x:Name="btn_kiuas" Content="KIUAS ON/OFF" HorizontalAlignment="Left" Margin="630,340,0,0" VerticalAlignment="Top" Width="250" Height="70" FontSize="24" Click="btn_kiuas_Click"/>
+        <Label x:Name="lbl_sauna_Copy" Content="SAUNAN LÄMPÖTILA" FontSize="16" HorizontalAlignment="Left" Margin="620,180,0,0" VerticalAlignment="Top" Height="60" Width="260" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
